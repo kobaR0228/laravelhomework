@@ -20,21 +20,22 @@
                             @endforeach
                         </ul>
                     @endif
+                     
                     <p>
-                        名前：<input type="text" name="name">
+                        名前：<input class="col-md-2" type="text" name="name">
                     </p>
                     <p>
-                        性別：<input type="radio" name="sex" value="male">男
-                        <input type="radio" name="sex" value="female">女
+                        性別：<input class="col-md-2" type="radio" name="gender" value="male">男
+                        <input type="radio" name="gender" value="female">女
                     </p>
                     <p>
-                        趣味:<input type="text" name="hobby"/>
+                        趣味:<input class="col-md-2" type="text" name="hobby"/>
                     </p>
                     <p>
-                        自己紹介:<input type="textarea" name="introduction" >
+                        自己紹介:<input class="col-md-2" type="textarea" name="introduction" >
                     </p>
                     
-                    
+                    {{ csrf_field() }}
                     <input type="submit" value="Submit"/>
             　　</form>
                 
